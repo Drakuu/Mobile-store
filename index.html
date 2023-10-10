@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <title>Document</title>
+  <style>
+    footer {
+      animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite alternate both;
+    }
+
+    @keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+
+      40% {
+        opacity: 0.6;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    button {
+      animation: vibrate-1 0.6s linear 0.4s infinite both;
+    }
+
+    @keyframes vibrate-1 {
+      0% {
+        transform: translate(0);
+      }
+
+      20% {
+        transform: translate(-2px, 2px);
+      }
+
+      40% {
+        transform: translate(-2px, -2px);
+      }
+
+      60% {
+        transform: translate(2px, 2px);
+      }
+
+      80% {
+        transform: translate(2px, -2px);
+      }
+
+      100% {
+        transform: translate(0);
+      }
+    }
+
+    img {
+      animation: tilt-in-fwd-tr 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @keyframes tilt-in-fwd-tr {
+      0% {
+        transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+        opacity: 0;
+      }
+
+      100% {
+        transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+        opacity: 1;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/assets/index-3328bca3.css">
+</head>
+
+<body>
+  <nav class="text-yellow-50 h-12  bg-slate-800 flex justify-between ">
+    <img class="h-12  px-7"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkhL-aXhyfefjPKBg6kpx4zsQ8Jfo98UUHXQ&usqp=CAU0"
+      alt="ed">
+    <ul class="px-20 py-2   flex space-x-5 capitalize ">
+      <li class="cursor-pointer">home</li>
+      <li class="cursor-pointer">about</li>
+      <li class="cursor-pointer">page</li>
+      <li class="cursor-pointer">contact us</li>
+    </ul>
+  </nav>
+  <main>
+    <div class="h-96 bg-slate-300 py-32 pl-10">
+      <div class="text-6xl">Buy new iphone 15 from here </div>
+      <p class="pt-4 ">Losrem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi voluptatem alias quasi
+        maiores fuga quis
+        distinctio, nobis explicabo quas ab veritatis. Possimus necessitatibus doloremque repellendus omnis vitae iusto
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo facere corporis voluptatem quod dignissimos, illo
+        ea delectus, maiores voluptate atque, debitis soluta fugit aut impedit voluptates! Suscipit natus vel odit.
+        excepturi, optio abfuga tempora blanditiis?
+        voluptatum!</p>
+      <div class=" flex justify-evenly  pt-12">
+        <button class="w-32 h-11 rounded-3xl text-white bg-slate-600 hover:bg-slate-800 ">Add to cart</button>
+        <button class="w-32 h-11 rounded-3xl text-white bg-slate-600 hover:bg-slate-800 ">Buy now</button>
+      </div>
+    </div>
+  </main>
+  <hr>
+  <p class="font-bold from-zinc-400 text-3xl">Have a look on these beauty beast !</p>
+  <hr>
+  <div class="flex justify-around h-64   ">
+    <img class="cursor-pointer  "
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8NGeRrvzuZQexx88tpt4MvLOvafpvCezUZw&usqp=CAU" alt="">
+    <img class="cursor-pointer " src="https://phonebolee.com/images/largepic/large_apple-iphone-15-pro-max_8.jpg"
+      class="" alt="">
+    <img class="cursor-pointer " src="https://phonebolee.com/images/largepic/large_apple-iphone-15-pro-max_4.jpg"
+      alt="">
+  </div>
+  <hr>
+  <footer class="bg-slate-800 h-14 flex items-center text-white mt-8 justify-center">
+    copywrite &copy; by Drakuu since 2023
+  </footer>
+</body>
+
+</html>
